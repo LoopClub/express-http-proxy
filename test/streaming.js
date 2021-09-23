@@ -2,7 +2,8 @@
 
 var assert = require('assert');
 var express = require('express');
-var http = require('http');
+var followRedirects = require('follow-redirects');
+var http = followRedirects.http;
 var startProxyTarget = require('./support/proxyTarget');
 var proxy = require('../');
 
